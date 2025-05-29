@@ -12,3 +12,14 @@ class Item(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Order(models.Model):
+    items = models.ManyToManyField(Item, verbose_name="Items")
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Order #{self.pk}"
+
+    def total_amount(self):
+        return sum(item.price for item in self.items.all()) / 100

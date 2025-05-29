@@ -10,3 +10,9 @@ class ItemAdmin(admin.ModelAdmin):
         "description",
         "price",
     )
+
+
+@admin.register(models.Order)
+class OrderAdmin(admin.ModelAdmin):
+    list_display = ("created_at",)
+    filter_horizontal = ("items",)
