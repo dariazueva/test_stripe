@@ -23,6 +23,10 @@ ALLOWED_HOSTS = [
     "localhost",
 ]
 
+BASE_URL = os.getenv("BASE_URL", "http://localhost:8000")
+SUCCESS_URL = f"{BASE_URL}/success"
+CANCEL_URL = f"{BASE_URL}/cancel"
+
 
 # Application definition
 

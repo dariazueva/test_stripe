@@ -32,8 +32,8 @@ def buy_item(request, id):
             }
         ],
         mode="payment",
-        success_url="http://localhost:8000/success",
-        cancel_url="http://localhost:8000/cancel",
+        success_url=settings.SUCCESS_URL,
+        cancel_url=settings.CANCEL_URL,
     )
     return JsonResponse({"id": session.id})
 
@@ -73,7 +73,7 @@ def buy_order(request, id):
         payment_method_types=["card"],
         line_items=line_items,
         mode="payment",
-        success_url="http://localhost:8000/success",
-        cancel_url="http://localhost:8000/cancel",
+        success_url=settings.SUCCESS_URL,
+        cancel_url=settings.CANCEL_URL,
     )
     return JsonResponse({"id": session.id})
