@@ -91,13 +91,13 @@ docker-compose down
 
 ### Онлайн доступ
 Проект развернут по адресу:
-https://your-deployed-app.com
+https://test-stripe-635h.onrender.com/
 
 ### Пример страницы товара:
-https://your-deployed-app.com/item/1
+https://test-stripe-635h.onrender.com/item/1
 
 ### Доступ к админке:
-https://your-deployed-app.com/admin/
+https://test-stripe-635h.onrender.com/admin/
 Логин: admin
 Пароль: admin123
 
