@@ -4,6 +4,7 @@ Django + Stripe API - Тестовое задание
 ## Описание
 
 Простой Django-сервер с интеграцией Stripe API, реализующий функционал онлайн-оплаты товаров и заказов.
+https://test-stripe-635h.onrender.com/item/1/
 
 ## Требования
 
@@ -94,22 +95,15 @@ docker-compose down
 https://test-stripe-635h.onrender.com/
 
 ### Пример страницы товара:
-https://test-stripe-635h.onrender.com/item/1
+https://test-stripe-635h.onrender.com/item/1/
+
+### Пример страинцы заказа:
+https://test-stripe-635h.onrender.com/order/1/
 
 ### Доступ к админке:
 https://test-stripe-635h.onrender.com/admin/
 Логин: admin
 Пароль: admin123
-
-### Эндпоинты
-
-GET     */*             — Главная страница с формой ввода города.
-
-POST    */weather/*     — Обработка формы, отображение прогноза погоды.
-
-GET     */stats/*       — API со статистикой по частоте введённых городов.
-
-GET     */admin/*       — Панель администратора Django.
 
 
 ## Автор
